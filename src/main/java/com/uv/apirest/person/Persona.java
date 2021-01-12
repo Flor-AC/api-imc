@@ -37,15 +37,28 @@ public class Persona {
     @ApiModelProperty(value = "The edad of the persona")
     private String edadPersona;
     
+    @Size(max = 20)
+    @ApiModelProperty(value = "The imc of the persona")
+    private String imcPersona;
+    
     public Persona() {
     }
 
-    public Persona(Long idPersona, String generoPersona, String estaturaPersona, String pesoPersona, String edadPersona) {
+    public Persona(Long idPersona, String generoPersona, String estaturaPersona, String pesoPersona, String edadPersona, String imcPersona) {
         this.idPersona = idPersona;
         this.generoPersona = generoPersona;
         this.estaturaPersona = estaturaPersona;
         this.pesoPersona = pesoPersona;
         this.edadPersona = edadPersona;
+        this.imcPersona = imcPersona;
+    }
+
+    public String getImcPersona() {
+        return imcPersona;
+    }
+
+    public void setImcPersona(String imcPersona) {
+        this.imcPersona = imcPersona;
     }
     
     public Long getIdPersona() {
