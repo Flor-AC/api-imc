@@ -16,7 +16,7 @@ import com.uv.apirest.person.IRepositoryPersona;
 
 @RestController
 @EnableAutoConfiguration
-@CrossOrigin("*")
+@CrossOrigin(origins = "*")
 public class ControllerPersona {
 
     @Autowired
